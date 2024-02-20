@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Basic II
+    </title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Brendan
+                </td>
+                <td>
+                    Stanton
+                </td>
+                <td>
+                    brendanrocks@gmail.com
+                </td>
+                <td> FakePassword123 </td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Here is a list of my favorite things:</h1>
+    <ul>
+        <li>Food</li>
+        <li>Bandwidth</li>
+        <li>Coffee</li>
+        <li>Beach
+        </li>
+    </ul>
+    <ol>
+        <li>Brocolo</li>
+        <li>Zahahoria</li>
+        <li>Apio</li>
+        <li>Sandia</li>
+    </ol>
+    <h3>Esta es mi <a href="https://homer.sii.cl/">página favorita</a> </h3>
+    <script>
+        function sigma (num) {
+            if (num == 1) {
+                return 1
+            }
+            return num + sigma(num - 1)
+        }
+        // 1. Le pregunto al usuario la temperatura
+        let celsius = prompt("¿Que temperatura hace?")
+
+        // 2. Convierto la respuesta del usuario a numero
+        celsius = parseInt(celsius)
+
+        // 3. Le sumo 273.15
+        const kelvin = celsius + 273.15
+
+        // 4. Imprimo la respuesta
+        console.log("Hay una temperatura de " + kelvin + "°K")
+
+        
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votaciones</title>
+</head>
+
+<body>
+  <h2>Votaciones</h2>
+  
+  <script>
+    const edad = prompt("Ingrese su edad porfavor")
+    const edadnumb = parseInt(edad)
+    let frase
+    if (edadnumb < 18) {
+      frase = "Usted no puede votar"
+    }
+    else if (edadnumb >= 18 && edadnumb <= 65) {
+      frase= "Usted si puede votar y tiene que hacer la fila"
+    }
+    else {
+      frase = "Usted puede votar. Pase nomas"
+    }
+    alert(frase)
+  </script>
+</body>
+
+</html>

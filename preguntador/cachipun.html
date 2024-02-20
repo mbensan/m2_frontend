@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cachipun</title>
+</head>
+<body>
+  <h2>Juguemos cachipun</h2>
+  <p>1. Jugar cachipun con el usuario</p>
+  <p>2. Jugar cachipun hasta que el usuario diga que no</p>
+  <script>
+    while (true) {
+
+      const jugada_usuario = prompt('Elija\n1: Piedra\n2:Papel\n3: Tijeras\n0: Terminar')
+      const jugada_cpu = Math.ceil(Math.random() * 3)
+  
+      console.log('El usuario jugó ' + jugada_usuario);
+      console.log('La CPU jugó ' + jugada_cpu);
+      
+      // Si el usuario jugó piedra 
+      if (jugada_usuario == 1) {
+        // y la CPU jugó piedra
+        if (jugada_cpu == 1) {
+          console.log('Ambos empatan con piedra');
+        }
+        // y la CPU jugó papel
+        else if (jugada_cpu == 2) {
+          console.log('La CPU le ganó con PAPEL');
+        }
+        // y la CPU jugó tijera
+        else {
+          console.log('Usted gana PIEDRA contra TIJERAS');
+        }
+      }
+      // Si el usuario juega papel
+      else if (jugada_usuario == 2) {
+        // y la CPU eligió piedra
+        if (jugada_cpu == 1) {
+          console.log("Usted gana PAPEL contra PIEDRA");
+        }
+        // y la CPU elige papel
+        else if (jugada_cpu == 2) {
+          console.log("Ambos empatan con PAPEL");
+        }
+        // y la CPU elige TIJERA
+        else {
+          console.log("Usted pierde PAPEL contra TIJERA");
+        }
+      }
+      // Usuario elige TIJERA
+      else if (jugada_usuario == 3) {
+        // y la CPU eligió piedra
+        if (jugada_cpu == 1) {
+          console.log("Usted pierde TIJERA contra PIEDRA");
+        }
+        // y la CPU elige papel
+        else if (jugada_cpu == 2) {
+          console.log("Usted gana TIJERA contra PAPEL");
+        }
+        // y la CPU elige TIJERA
+        else {
+          console.log("Ambos empatan con TIJERAS");
+        }
+      }
+      // Usuario desea salir del juego
+      else if (jugada_usuario == 0) {
+        break
+      }
+      // Usuario elige opcion no válida
+      else {
+        console.log("Esta jugada no es válida");
+      }
+    }
+  </script>
+</body>
+
+</html>

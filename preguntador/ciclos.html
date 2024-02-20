@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciclos</title>
+</head>
+
+<body>
+  <p>
+    Imprimir multiplos de 5 desde el -200 al 200
+  </p>
+  <script>
+    console.log ("1 elefante se balanceaba")
+    console.log ("2 elefantes se balanceaban")
+    let i = 3
+    while (i<=300) {
+      const frase = i + " elefantes se balanceaban"
+      console.log (frase) 
+      i = i+1
+    }
+    /*
+      -200, -195, -190, ...., -5, 0, 5, 10, ...., 195, 200
+    */
+    let j = -200
+    while (j <= 200) {
+      console.log(j);
+      j += 5
+    }
+
+
+    let num = 1
+    while (num <= 100) {
+      if ((num % 3 == 0) && (num % 5 == 0)) {
+        console.log("FizzBuzz")
+      }
+      else if (num % 3 == 0) {
+        console.log("Fizz");
+      }
+      else if (num % 5 == 0) {
+        console.log("Buzz")
+      }
+      else {
+        console.log(num);
+      }
+      num = num + 1
+    }
+
+  </script>
+</body>
+
+</html>

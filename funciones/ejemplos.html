@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funciones</title>
+</head>
+<body>
+  <script>
+    // definiendo funciones
+    function mult (a, b) {
+      const resultado = a * b;
+      return resultado;
+    }
+
+    function crearSaludo () {
+      return "hola curso!"
+    }
+
+    function saludar (saludo) {
+      console.log(saludo)
+    }
+
+    const resultado = mult(2, 3)
+    console.log('El resultado de 2 x 3 es = ' + resultado);
+
+    // ejercicio final de funciones
+    const triplicador = function (x) { return 3*x; }
+    
+    function multiplicador (a, b) {
+      return a * b
+    }
+
+    function division (a, b) {
+      return a / b
+    }
+
+    function resto (a, b) {
+      return a % b
+    }
+
+    const result = resto(division(multiplicador(triplicador(5), 12), 12), 3)
+    console.log("El resultado es", result);
+  </script>
+</body>
+</html>

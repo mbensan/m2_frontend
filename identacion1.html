@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Básico I
+    </title>
+  </head>
+  <body>
+    <h1>
+      ¿Qué lenguaje te encanta?
+    </h1>
+    <p>
+      ¡Amo HTML!
+    </p>
+    <script>
+      // 1. Le pregunto al usuario cantidad de días
+      let dias = prompt("¿Cuantos dias son?")
+
+      // 2. Lo transformo a número
+      dias = parseInt(dias)
+
+      // 3. Veo cuantos años tengo en esa cantidad de dias
+      let anios = dias / 365
+
+      // 4. Eliminamos los decimales
+      anios = Math.floor(anios)
+
+      // 5. Le aviso al usuario cuantos años son
+      console.log("Son " + anios + " años");
+
+      // 6. Calculamos cuantos dias nos quedan
+      dias = dias - (anios * 365)
+
+      // 7. Calculamos cuantas semanas tenemos
+      let semanas = dias / 7
+
+      // 8. Eliminamos los decimales de las semanas
+      semanas = Math.floor(semanas)
+
+      // 9. Avisamos la cantidad de semanas
+      console.log("Hay " + semanas + ' semanas');
+
+      // 10. Calculamos cuantos dias nos quedan
+      dias = dias - (semanas * 7)
+
+      // 11. Finalmente avisamos cuantos dias son
+      console.log(' y ' + dias + ' días');
+
+
+    </script>
+  </body>
+</html>
